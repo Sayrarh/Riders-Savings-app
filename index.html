@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savings App</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>GODSPOWER SAVING GROUP</header>
+        <div class="heading">
+          <h2>Total Money Saved: <button id="totalMoney">#50000</button></h2> 
+        </div>
+        <form action="" method="post" id="form">
+
+            <div class="form-content">
+                <ul id="list" >
+                    <li>Group Members</li>
+                    <textarea name="members">NIL</textarea>
+                </ul>
+            </div>
+            <div class="form-content">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your fullname" />
+                <small></small>
+              </div>
+              <div class="form-content">
+                <label for="tier">Choose a Tier</label>
+                <select id="tier">
+                  <option>Select preferred tier</option>
+                  <option value="tier1">
+                    Tier 1
+                  </option>
+                  <option value="tier2">
+                    Tier 2
+                  </option>
+                  <option value="tier3">
+                    Tier 3 
+                  </option>
+                </select>
+                <small></small>
+              </div>
+              <div class="form-content">
+                <label for="amount">Amount</label>
+                <input
+                  type="text"
+                  id="amount"
+                  placeholder="Enter the amount you want to save"
+                />
+                <small></small>
+              </div>
+              <button type="submit">Join Saving Group</button>
+        </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
