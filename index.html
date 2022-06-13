@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Savings App</title>
   </head>
   <body>
@@ -13,19 +14,21 @@
         <div class="heading">
           <h2>Total Money Saved: <button id="totalMoney">#50000</button></h2> 
         </div>
+        
         <form action="" method="post" id="form">
-
             <div class="form-content">
                 <ul id="list" >
                     <li>Group Members</li>
                     <textarea name="members">NIL</textarea>
                 </ul>
             </div>
+
             <div class="form-content">
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Enter your fullname" />
                 <small></small>
               </div>
+
               <div class="form-content">
                 <label for="tier">Choose a Tier</label>
                 <select id="tier">
@@ -51,6 +54,7 @@
                 />
                 <small></small>
               </div>
+
               <button type="submit">Join Saving Group</button>
         </form>
         </div>
