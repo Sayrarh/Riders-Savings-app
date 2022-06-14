@@ -16,10 +16,13 @@
   
   body{
     background-color:var(--lemon);
+    background: url("./Images/rider.jpg") no-repeat center/cover fixed;
+    
   }
 
   main{
     min-width: 30rem;
+    color: rgb(248, 248, 248);
     max-width: 50rem;
     margin: 20px auto;
     padding: 20px;
@@ -29,6 +32,11 @@
       font-size: 2.5rem;
       font-weight: 600;
       text-align: center;
+      background-image: linear-gradient(to left, rgb(196, 160, 84), rgb(11, 46, 24), rgb(147, 219, 224), rgb(72, 228, 10));
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
   }
 
   h2{
@@ -75,19 +83,19 @@
 
   .form-content small{
       color: var(--red);
-      visibility: hidden;
+      visibility: visible;
   }
 
   .form-content.error small{
-      visibility: hidden;
+      visibility: visible;
       color: var(--red);
   }
 
-  .form-content.error input{
+  .form-content.error input select{
       border: 2px solid var(--red);
   }
   
-  .form-content.success input{
+  .form-content.success input select{
       border: 2px solid var(--green);
   }
 
