@@ -26,7 +26,7 @@
   }
 
   header{
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 600;
       text-align: center;
   }
@@ -42,13 +42,13 @@
 
   .form-content label{
       display: block;
-      color: var(--lightblack);
       margin-bottom: 0.3rem;
+      margin-top: 2rem;
   }
 
   .form-content #tier{
-    width: 100%;
-    padding: 0.8rem;
+    width: 52rem;
+    padding: 0.9rem;
     border-radius: 1rem;
     cursor: pointer;
     color: var(--lightblack);
@@ -68,7 +68,7 @@
   }
 
   textarea{
-      width: 50%;
+      width: 51.5rem;
       height: 5rem;
       border-radius: 0.3rem;
   }
@@ -93,6 +93,7 @@
 
   li{
       list-style: none;
+      margin-top: 1.5rem;
   }
 
 .btn{
@@ -104,10 +105,11 @@
   }
 
   button{
-      padding: 0.5rem;
-      width: 100%;
+      padding: 0.6rem;
+      width: 52rem;
       border-radius: 1rem;
       outline:none;
+      margin-top: 2rem;
       font-size: 15px;
       background-color: var(--light-brown);
       cursor: pointer;
