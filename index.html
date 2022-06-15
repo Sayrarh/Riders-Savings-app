@@ -16,32 +16,32 @@
           <h2>Total Money Saved: <button class= "btn" id="totalMoney">#50000</button></h2> 
         </div>
 
-        <form action="" method="" id="form">
+        <form action="" method="" id="form" name="myform" onsubmit="return validate()">
             <div class="form-content">
                 <ul id="list" >
                     <li>Group Members</li>
-                    <textarea name="members">NIL</textarea>
+                    <textarea id="members" name="members">NIL</textarea>
                 </ul>
             </div>
 
             <div class="form-content">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your fullname" />
+                <input type="text" id="name" name="name" placeholder="Enter your fullname" />
                 <small></small>
               </div>
 
               <div class="form-content">
                 <label for="tier">Choose a Tier</label>
-                <select id="tier">
-                  <option>Select preferred tier</option>
+                <select id="tier" name="tier">
+                  <option value="Select preferred tier">Select preferred tier</option>
                   <option value="tier1">
-                    Tier 1
+                    Tier 1 -> #10,000 (7% interest weekly)
                   </option>
                   <option value="tier2">
-                    Tier 2
+                    Tier 2 -> #20,000 (12% interest weekly)
                   </option>
                   <option value="tier3">
-                    Tier 3 
+                    Tier 3 -> #30,000 (25% interest weekly)
                   </option>
                 </select>
                 <small></small>
@@ -50,7 +50,7 @@
                 <label for="amount">Amount</label>
                 <input
                   type="text"
-                  id="amount"
+                  id="amount" name="amount"
                   placeholder="Enter the amount you want to save"
                 />
                 <small></small>
