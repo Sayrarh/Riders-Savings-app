@@ -81,24 +81,6 @@
       border-radius: 0.3rem;
   }
 
-  .form-content small{
-      color: var(--red);
-      visibility: visible;
-  }
-
-  .form-content.error small{
-      visibility: visible;
-      color: var(--red);
-  }
-
-  .form-content.error input select{
-      border: 2px solid var(--red);
-  }
-  
-  .form-content.success input select{
-      border: 2px solid var(--green);
-  }
-
   li{
       list-style: none;
       margin-top: 1.5rem;
