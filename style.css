@@ -1,7 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-    --purple: #c486c4;
-    --dark-white: #585658;
-    
+    --light-brown: #d4b36c; 
+    --lemon: #b8d386; 
+    --white:#ffffff;
+    --green: #02f322;
+    --black: #000000;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body{
+    background-color:var(--lemon);
+    background: url("./Images/rider.jpg") no-repeat center/cover fixed;
+    
+  }
+
+  main{
+    min-width: 30rem;
+    color: var(--white);
+    max-width: 52rem;
+    margin: 1.25rem auto ;
+    padding: 1.25rem;
+  }
+
+  p{
+      color: var(--green);
+      font-weight: 500;
+  }
+
+  header{
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+      background-image: linear-gradient(to left, rgb(196, 160, 84), rgb(11, 46, 24), rgb(147, 219, 224), rgb(72, 228, 10));
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+  }
+
+  h2{
+      font-weight: 500;
+    
+  }
+
+  .form-content{
+      margin-bottom: 1.5rem;
+  }
+
+  .form-content label{
+      display: block;
+      margin-bottom: 0.3rem;
+      margin-top: 2rem;
+      font-weight: 600;
+  }
+
+
+  .form-content select{
+    display: block;
+    width: 52rem;
+    padding: 0.85rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+}
+
+  .form-content input {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 1rem;
+      color: var(--black);
+  }
+
+  
+  .form-content #list{
+    width: 100%;
+    height: auto;
+  }
+
+  textarea{
+      width: 51.5rem;
+      height: 5rem;
+      border-radius: 0.3rem;
+  }
+
+  li{
+      list-style: none;
+      font-weight: 600;
+      margin-top: 1.5rem;
+  }
+
+.btn{
+    width: 20%;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    cursor: default;
+    display: inline;
+  }
+
+  button{
+      padding: 0.6rem;
+      width: 52rem;
+      border-radius: 1rem;
+      outline:none;
+      margin-top: 2rem;
+      font-size: 15px;
+      background-color: var(--light-brown);
+      cursor: pointer;
+  }
