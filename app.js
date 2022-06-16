@@ -14,7 +14,7 @@ totalMoney.innerHTML = "N0.00";
 function validate() {
     let fullName = document.forms["myform"]["name"].value;
     let selectTier = document.forms["myform"]["tier"].value;
-    let amountInput = document.forms["myform"]["amount"].value;
+    //let amountInput = document.forms["myform"]["amount"].value;
     let newInputedAmount = amount.value;
 
     if(fullName == "" || (!isNaN(fullName))){
