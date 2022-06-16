@@ -71,7 +71,7 @@
 
   .form-content input {
       display: block;
-      width: 100%;
+      width: 52rem;
       padding: 0.8rem;
       border-radius: 1rem;
       color: var(--black);
