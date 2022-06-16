@@ -27,27 +27,27 @@ function validate() {
     if(fullName == "" || (!isNaN(fullName))){
         alert("Enter your name");
     }
-    if(selectTier == "Select preferred tier"){
+    if(selectTier !== "Select preferred tier"){
         switch(selectTier){
             case "tier 1":
             if(newInputedAmount < 1000 || newInputedAmount > 10000){
                 percentage = 0.07;
                         alert("Amount to save must be greater than 1000 and lesser than 10000");
-                        return false
+                        return true;
                     }
             break;
             case "tier 2":
             if(newInputedAmount < 20000 || newInputedAmount > 30000){
                 percentage = 0.12;
                         alert("Amount to save must be greater than 20000 and lesser than 30000");
-                        return false
+                        return true;
                     }
             break;
             case "tier 3":
             if(newInputedAmount > 30000){
                 percentage = 0.25;
                         alert("Amount to save must be greater than 30000");
-                        return false
+                        return true;
                     }
             break;
             default:
@@ -58,7 +58,7 @@ function validate() {
 
     totalMoney.innerHTML = newInputedAmount;//code to update the newInputedAmount
 
-    totalMoney = newInputedAmount ;
+    //totalMoney = newInputedAmount ;
     
     calculatedAmount = percentage * newInputedAmount; //Calculating interest per week
     calculatedAmount = calculatedAmount.toFixed(2);
