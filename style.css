@@ -59,15 +59,15 @@
       font-weight: 600;
   }
 
-  .form-content #tier{
-    width: 52rem;
-    padding: 0.9rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    color: var(--lightblack);
-  }
 
-  .form-content input{
+  .form-content select{
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+  .form-content input {
       display: block;
       width: 100%;
       padding: 0.8rem;
