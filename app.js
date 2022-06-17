@@ -8,6 +8,8 @@ let interestMsg = document.getElementById("interest");
 let calculatedAmount;
 let list = []; //array of riders
 let totalMoneyAdd;
+let amountToWithDraw;
+
 
 
 form.addEventListener("submit", function(event) {
@@ -24,7 +26,9 @@ function validate() {
     let selectTier = document.forms["myform"]["tier"].value;
     let newInputedAmount = amount.value;
 
-    percentage = parseFloat("0.00");
+    amountToWithDraw = document.getElementById("amt-with");
+
+    percentage = 0.00;
 
 
     if(fullName == "" || (!isNaN(fullName))){
@@ -37,7 +41,7 @@ function validate() {
                         alert("Amount to save must be greater than 1000 and lesser than 10000");
                         return true;
                     }else{
-                        percentage = parseFloat("0.07");
+                        percentage = 0.07;
                     }
             break;
             case "tier 2":
@@ -45,7 +49,7 @@ function validate() {
                         alert("Amount to save must be greater than 20000 and lesser than 30000");
                         return true;
                     }else{
-                        percentage = parseFloat("0.12");
+                        percentage = 0.12;
                     }
             break;
             case "tier 3":
@@ -53,7 +57,7 @@ function validate() {
                         alert("Amount to save must be greater than 30000");
                         return true;
                     }else{
-                        percentage = parseFloat("0.25");
+                        percentage = 0.25;
                     }
             break;
             default:
@@ -64,8 +68,8 @@ function validate() {
             alert("Select a tier to proceed");
         }
 
-    newInputedAmount = parseFloat(newInputedAmount);
-    totalMoneyAdd += parseFloat(newInputedAmount);//code to update the newInputedAmount
+    //newInputedAmount = parseFloat(newInputedAmount);
+    totalMoneyAdd += Number(newInputedAmount);//code to update the newInputedAmount
     totalMoney.innerHTML = totalMoneyAdd;
     console.log(percentage);
     
@@ -73,8 +77,11 @@ function validate() {
     calculatedAmount = calculatedAmount.toFixed(2);
     interestMsg.textContent = "Your weekly interest is: #" + calculatedAmount;
 
-    list.push(fullName); //pushing name to the group members list 
+    amountToWithDraw.innerHTML =  Number(newInputedAmount) + (percentage * Number(newInputedAmount));// amount to draw with interest
+
+    list.push(fullName + " -> " + newInputedAmount); //pushing name to the group members list 
     membersList.innerHTML = list; //display the list
+    
 
     
 if(isNaN(newInputedAmount)){
