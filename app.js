@@ -10,6 +10,7 @@ let list = []; //array of riders
 let totalMoneyAdd;
 
 
+
 form.addEventListener("submit", function(event) {
     event.preventDefault();//avoid page reload
 });
@@ -23,6 +24,8 @@ function validate() {
     let fullName = document.forms["myform"]["name"].value;
     let selectTier = document.forms["myform"]["tier"].value;
     let newInputedAmount = amount.value;
+
+    let amountToWithDraw = document.getElementById("amt-with");
 
     percentage = parseFloat("0.00");
 
@@ -73,8 +76,11 @@ function validate() {
     calculatedAmount = calculatedAmount.toFixed(2);
     interestMsg.textContent = "Your weekly interest is: #" + calculatedAmount;
 
-    list.push(fullName); //pushing name to the group members list 
+    amountToWithDraw.innerHTML = newInputedAmount + (percentage * newInputedAmount);// amount to draw with interest
+
+    list.push(fullName + " -> " + newInputedAmount); //pushing name to the group members list 
     membersList.innerHTML = list; //display the list
+    
 
     
 if(isNaN(newInputedAmount)){

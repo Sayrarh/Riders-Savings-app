@@ -28,6 +28,12 @@
     padding: 1.25rem;
   }
 
+  .list {
+    color: var(--white);
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
   p{
       color: var(--green);
       font-weight: 500;
@@ -92,14 +98,27 @@
   li{
       list-style: none;
       font-weight: 600;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
   }
+
+  span{
+    font-weight: 200;
+  }
+
 
 .btn{
     width: 20%;
     padding: 0.3rem;
     border-radius: 0.5rem;
     cursor: default;
+    display: inline;
+  }
+
+  #amt-with{
+    width: 20%;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
     display: inline;
   }
 
@@ -113,3 +132,5 @@
       background-color: var(--light-brown);
       cursor: pointer;
   }
+
+  

@@ -19,7 +19,7 @@
         <form action="" method="" id="form" name="myform" onsubmit="return validate()">
             <div class="form-content">
                 <ul>
-                    <li>Group Members:</li>
+                    <li>Group Members<span>(list of members with their money saved)</span>:</li>
                     <textarea id="members" name="members">NIL</textarea>
                 </ul>
             </div>
@@ -54,8 +54,11 @@
                 /> 
               </div>
               <p id="interest"></p>
-              <button type="submit">Join Saving Group</button>
+              <button class="submit" type="submit">Join Saving Group</button>
         </form>
+        <div class="form-content">
+          <h4>Amount to withdraw: # <button id="amt-with"></button></h4>
+        </div>
         </div>
       </div>
     </main>
