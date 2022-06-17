@@ -84,7 +84,7 @@ function validate() {
     
 
     
-if(isNaN(newInputedAmount)){
+if(newInputedAmount == "" || newInputedAmount.length == 0){
         alert("Input an amount to save");
     }
 else{
