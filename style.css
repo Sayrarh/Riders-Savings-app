@@ -89,12 +89,6 @@
     height: auto;
   }
 
-  textarea{
-      width: 51.5rem;
-      height: 5rem;
-      border-radius: 0.3rem;
-  }
-
   li{
       list-style: none;
       font-weight: 600;
@@ -138,6 +132,12 @@ h4{
       background-color: var(--light-brown);
       cursor: pointer;
   }
-
+.mem{
+    margin-top: 0.2rem;
+    width: 51.5rem;
+    height: 5rem;
+    border-radius: 0.3rem;
+    background-color: var(--white);
+}
 
   

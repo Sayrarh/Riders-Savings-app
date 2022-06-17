@@ -77,9 +77,9 @@ function validate() {
     calculatedAmount = calculatedAmount.toFixed(2);
     interestMsg.textContent = "Your weekly interest is: #" + calculatedAmount;
 
-    amountToWithDraw.innerHTML =  Number(newInputedAmount) + (percentage * Number(newInputedAmount));// amount to draw with interest
+    amountToWithDraw.innerHTML =  Number(newInputedAmount) + (percentage *  Number(newInputedAmount));// amount to draw with interest
 
-    list.push(fullName + " -> " + newInputedAmount); //pushing name to the group members list 
+    list.push(fullName + "-> " + newInputedAmount); //pushing name to the group members list 
     membersList.innerHTML = list; //display the list
     
 
